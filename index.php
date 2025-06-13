@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body style="background-color: black; color: white;">
+
+    <!-- class, object, this and new in OOP -->
+
+    
     <?php
+
+        /*
         echo "working";
         echo "<br>";
         class Car{
@@ -28,6 +34,10 @@
 
         echo "$car1->name"."<br>";
         $car1->showModel("al34");
+        */
     ?>
+
+    
+
 </body>
 </html>
