@@ -37,7 +37,34 @@
         */
     ?>
 
-    
+    <!-- Constructor and Destructor -->
+    <?php
+        // Constructor automatically call ho jata h jb hm class sy object bnaty h using new keyword
+        // constructor has special name in php __construct
+        // decleration
+        class Student{
+            function __construct(){
+                echo "Constructor called"."<br>";
+            }
+        }
+        $stu1 = new Student;  // automatically calls jb object bna
+
+        // types of constructors
+        //  (i) default (ii) parameterized constructor
+
+        class Car{
+
+            public $brand;
+
+            function __construct($brandNumber){
+                $this->brand = $brandNumber;
+                echo "Brand is $this->brand";
+            }
+
+        }
+        $car1 = new Car(321);
+
+    ?>
 
 </body>
 </html>
