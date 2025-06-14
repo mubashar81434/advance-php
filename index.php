@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body style="background-color: black; color: white;">
 
     <!-- class, object, this and new in OOP -->
@@ -38,6 +39,7 @@
     ?>
 
     <!-- Constructor and Destructor -->
+
     <?php
         /*
         // Constructor automatically call ho jata h jb hm class sy object bnaty h using new keyword
@@ -100,6 +102,7 @@
     <!-- Inheritance -->
 
     <?php
+        /*
         // The mechanism of deriving a new class from old one is called inheritance 
         // parent class ko base class b khty h 
         // child class ko child ya extended class b khty h 
@@ -136,8 +139,48 @@
         $son1 = new Son; // new instance of Son class with the name son1
         $son1->setValues(2,3); // method called from Father class because of inheritance 
         $son1->display();
-
+        */
     ?>
+
+    <!-- Access specifier/modifier -->
+
+    <?php
+    
+        /*
+        // public, private and protected access modifier
+        // public sccess specifier ko kahi sy b access kiya ja skta h 
+
+        class ClassName{
+ 
+            public $r = "alpha";
+
+            // private $r = "alpha";
+
+            // function disp(){
+            //     echo "$this->r <br>";
+            // }
+
+            function disp(){
+                echo "$this->r <br>";
+            }
+
+        }
+
+        class MyClassExt extends ClassName{
+            
+           function show(){
+                echo $this->r;
+           }
+           
+        }
+
+        $newChildClass = new MyClassExt;
+
+        $newChildClass->show();
+
+        */
+    ?>
+
 
 </body>
 </html>
