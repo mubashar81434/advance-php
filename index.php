@@ -69,7 +69,31 @@
     ?>
 
     <!-- Destructors -->
-     
+    <?php 
+        // Jb hmy kisy object ko destory krna ho tb destructure ko call krty h 
+        // jb hmry object ka scope khtm hota h tu destructure function automatically call hota h 
+        // destructure name in php is __destruct
+        // destructre ka koi b argumnet nhi hota 
+
+        class Student{
+
+            function __construct($acceptParameter){
+                echo "Constructor function call automatically";
+                echo "<br>";
+                echo "Parameter passed as an argument - $acceptParameter";
+                echo "<br>";
+            }
+
+            function __destruct(){
+                echo "Destructor function call automatically";
+                echo "<br>";
+            }
+
+        }
+
+        $student1 = new Student("Passed parameter");
+        
+    ?>
 
 </body>
 </html>
