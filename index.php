@@ -39,6 +39,7 @@
 
     <!-- Constructor and Destructor -->
     <?php
+        /*
         // Constructor automatically call ho jata h jb hm class sy object bnaty h using new keyword
         // constructor has special name in php __construct
         // decleration
@@ -63,8 +64,12 @@
 
         }
         $car1 = new Car(321);
+        */
 
     ?>
+
+    <!-- Destructors -->
+     
 
 </body>
 </html>
